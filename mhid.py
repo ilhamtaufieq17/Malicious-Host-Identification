@@ -46,7 +46,7 @@ def Visualization():
         labels = [i for i in dict(G.nodes).keys()]
         labels = {i:i for i in dict(G.nodes).keys()}
         edges, weights = zip(*nx.get_edge_attributes(G,'weight').items())
-        fig, ax = plt.subplots(figsize=(10,5))
+        fig, ax = plt.subplots(figsize=(5,3))
         #scalarmappaple = cm.ScalarMappable(norm=normalize, cmap=colormap)
         #scalarmappaple.set_array(cent)
 
@@ -79,4 +79,4 @@ def TransferFile():
 CaptureData()
 PcapConversion()
 Visualization()
-TransferFile()
+#TransferFile()
